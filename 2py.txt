@@ -1,0 +1,41 @@
+#b1
+import numpy as np
+a=np.array([1,2,3])
+b=np.array([2,3,4])
+print("dot product of one dimension is",np.dot(a,b))
+a=np.array([[1,2],[3,4]])
+b=np.array([[1,2],[3,4]])
+print("matrix multiplication:",np.matmul(a,b))
+print("element multiplication of maytrix ",np.multiply(a,b))
+
+#b2
+import numpy as np
+a=np.array([[1,2],[3,4]])
+eigvalues,eigvectors=np.linalg.eig(a)
+print("eigen values",eigvalues)
+print("eigen vector",eigvectors)
+
+#b3
+import numpy as np
+a=np.array([[-2,6],[1,-2]])
+b=np.array([[9],[8]])
+a_inv=np.linalg.inv(a)
+e=np.matmul(a_inv,b)
+print("linear equation:",e)
+
+#b4
+#multiplicative inverse
+import numpy as np
+a=np.array([[-2,6],[1,-2]])
+a_inv=np.linalg.inv(a)
+print("d.inverse",a_inv)
+
+#matrix determinant
+a=np.array([[-2,7],[5,-8]])
+b=np.linalg.det(a)
+print("determinant",b)
+
+import numpy as np
+a=np.array([[-2,3],[6,-7]])
+b=np.linalg.matrix_rank(a)
+print("rank",b)
