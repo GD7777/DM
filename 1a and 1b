@@ -1,7 +1,17 @@
-
+#1a
 import numpy as np
 a=np.array([[1,2,3],[2,3,4],[3,4,5]])
 b=a.shape
 print(a.shape)
 c=a.ndim
 print(a.ndim)
+
+
+#1b
+import numpy as np 
+z=np.zeros([2,2])
+print(z)
+
+import numpy as np 
+z=np.ones([2,2])
+print(z)
