@@ -34,3 +34,14 @@ print(v)
 #hori
 h=np.hstack((x,y))
 print(h)
+
+
+
+#1e
+import numpy as np 
+a=np.array([[1,2,3,4],[2,3,4,5],[3,4,5,6],[4,5,6,7]])
+temp=a[[0,1,2,3],[1,1,1,1]]
+print(temp)
+#slicing
+i=a[:4,::2]
+print(i)
