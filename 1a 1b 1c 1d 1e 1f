@@ -45,3 +45,25 @@ print(temp)
 #slicing
 i=a[:4,::2]
 print(i)
+
+
+
+#1f
+#min
+import numpy as np 
+a=np.array([[1,3,-1,4],[3,-2,1,4]])
+b=a.min()
+print(b)
+#max
+c=a.max()
+print(c)
+#mean
+d=np.array([[1,2,3,4,5]])
+d=d.mean()
+print(d)
+#median
+e=np.median(d)
+print(e)
+#standard deviation
+f=a.std()
+print(f)
