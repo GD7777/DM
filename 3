@@ -1,0 +1,43 @@
+#3a 
+import pandas as pd 
+dia_data=pd.read_csv(r"data1.csv")
+records=len(dia_data)
+print("number of records=",records)
+dia_data.head(5)
+
+
+
+#3b 
+import pandas as pd 
+import numpy as np
+a1= pd.series([2,3,4])
+a1.describe()
+
+
+
+#3c 
+import pandas as pd 
+import numpy as np 
+c=pd.read_csv(r"data1.csv")
+print(c.shape)
+c.dropna(inplace=True)
+print(c.shape)
+
+
+
+#3d 
+import pandas as pd 
+import numpy as np
+dia_data=pd.read_csv(r"data1.csv")
+print("Before use of dropna()",dia_data.shape)
+dia_data.dropna(axis=1,row='all',inplace=True)
+print("After use of dropna()",dia_data.shape)
+dia_data.head(5)
+
+
+
+
+#3e
+import pandas as pd 
+print("shape:",dia_data.shape)
+print("no of columns:",len(dia_data.axes[1]))
